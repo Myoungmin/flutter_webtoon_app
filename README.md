@@ -1,3 +1,3 @@
 # flutter_webtoon_app
 
-A new Flutter project.
+Git 내려받고 Flutter: Get Packages 실행
