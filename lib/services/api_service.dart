@@ -1,5 +1,6 @@
 import 'dart:convert';
 
+import 'package:flutter_webtoon_app/models/webtoon_model.dart';
 import 'package:http/http.dart' as http;
 
 class ApiService {
@@ -12,7 +13,7 @@ class ApiService {
     if (response.statusCode == 200) {
       final List<dynamic> webtoons = jsonDecode(response.body);
       for (var webtoon in webtoons) {
-        print(webtoon);
+        WebtoonModel.fromJson(webtoon);
       }
       return;
     }
