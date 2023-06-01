@@ -63,7 +63,13 @@ class HomeScreen extends StatelessWidget {
                 },
               ),
             ),
-            Text(webtoon.title)
+            const SizedBox(
+              height: 10,
+            ),
+            Text(webtoon.title,
+                style: const TextStyle(
+                  fontSize: 22,
+                ))
           ],
         );
       },
