@@ -13,6 +13,9 @@ class Webtoon extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return GestureDetector(
+      onTap: () {
+        print('take me homeeee');
+      },
       child: Column(
         children: [
           Container(
